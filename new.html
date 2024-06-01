@@ -23,6 +23,7 @@
     .dropdown-menu{
         background-color: rgb(34, 33, 33);
         /* text-decoration: whitesmoke; */
+        
     }
     a:link {
             color: rgb(246, 238, 238);
@@ -34,6 +35,13 @@
         color: blue;
     }
 
+    .dropdown-item{
+        color: #fff;
+    }
+    .dropdown-item:hover{
+        color: rgb(203, 14, 109);
+        background-color: rgb(34, 33, 33);
+    }
 
     h1{
         position: relative;
@@ -76,7 +84,6 @@
     } */
 
     h3 input[type=text] {
-        width: 20%;
         box-sizing: border-box;
         border: 2px solid #ccc;
         border-radius: 4px;
@@ -88,21 +95,56 @@
         padding: 12px 20px 12px 40px;
         /* margin-left:800px; */
         margin-left: 40%;
+        margin-top: 20px;
+        
     }
 
     .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    /* border: 1px solid rgba(0, 0, 0, .125); */
-    margin-left: 100px;
-    margin-top: 20px;
-    /* margin-right: 100px; */
-}
-        
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        /* border: 1px solid rgba(0, 0, 0, .125); */
+        margin-left: 100px;
+        margin-top: 20px;
+        /* margin-right: 100px; */
+    }
+  
+    
+    #img_home{
+        /* style="position: relative;top: -700px; */
+        position: relative;
+        top:-700px;
+
+    }
+    @media only screen and (max-width: 992px) {
+        #home_main {
+            margin-top: 80px;
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        #img_home {
+            width: 200px;
+            top:-400px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        #img_home {
+            width: 200px;
+            top:-240px;
+        }
+        h3 input[type=text] {
+            margin-left: 15%;
+            margin-top: 20px;
+        }
+    }
+    .ico li{
+        display: inline;
+        margin-left:50px;
+    }
   </style>
 </head>
 <body>
@@ -125,12 +167,12 @@
             <ul class="navbar-nav me-auto">
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">SHOP NOW</a>
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">SHOP NOW</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item text-light" href="#">ALL</a></li>
-                      <li><a class="dropdown-item" href="#">SALWAR</a></li>
-                      <li><a class="dropdown-item" href="#">SAREES</a></li>
-                      <li><a class="dropdown-item" href="#">DISCOUNT SALE</a></li>
+                      <li><a class="dropdown-item" href="#">ALL</a></li>
+                      <li><a class="dropdown-item " href="#">SALWAR</a></li>
+                      <li><a class="dropdown-item " href="#">SAREES</a></li>
+                      <li><a class="dropdown-item " href="#">DISCOUNT SALE</a></li>
                     </ul>
     
                 </li>
@@ -155,11 +197,12 @@
                 <!-- <button class="btn btn-primary" type="button">Search</button> -->
             </form>
 
+            <ul class="ico">
             <li><a><i class="material-icons">facebook</i></a></li>
             <li><a><i class="material-icons">cloud</i></a></li>
             <li><a><i class="material-icons">favorite</i></a></li>
             <li><a><i class="material-icons">add to cart</i></a></li>
-
+            </ul>
         </div>
     
     </nav>
@@ -167,11 +210,11 @@
     <!-- home -->
 
     <div>
-        <div class="elementor-element elementor-element-771978f7 elementor-widget elementor-widget-image" data-id="771978f7" data-element_type="widget" data-widget_type="image.default">
+        <div class="elementor-element elementor-element-771978f7 elementor-widget elementor-widget-image" id="home_main"  data-id="771978f7" data-element_type="widget" data-widget_type="image.default">
             
             <img class="img-fluid logo-spec no-lazy" src="home.jpeg" alt="">
             
-            <div class="elementor-widget-container" style="position: relative;top: -700px;">
+            <div class="elementor-widget-container" id="img_home">
                 <h1>WELCOME TO </h1>
                 <style>/*! elementor - v3.21.0 - 26-05-2024 */
                     .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> <img decoding="async" width="400" height="120" src="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png" data-src="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png" class="attachment-full size-full wp-image-12190 lazy loaded" alt="" data-srcset="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png 400w, https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657-300x90.png 300w" data-sizes="(max-width: 400px) 100vw, 400px" style="width:100%;height:30%;max-width:400px" sizes="(max-width: 400px) 100vw, 400px" srcset="https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657.png 400w, https://chempakam.com/wp-content/uploads/2023/10/chempakam-logo-e1648124235657-300x90.png 300w" data-was-processed="true"> 
@@ -190,7 +233,7 @@
 
     <!-- round gallery -->
     
-    <div class="main_gallery m-5">
+    <div class="main_gallery mb-5" style="margin-top: -200px;">
         <div class="gallery">
             <a target="_blank" href="Wedding.webp">
             <img src="Wedding.webp" class="rounded-circle" alt="Cinque Terre" width="180" height="180">
@@ -254,101 +297,101 @@
 
 
 
-<div class="row g-0">
-    
-    <div class="col-md-3 col-6 product-column">
-        <div class="card" style="width:200px" >
-            <img class="card-img-top" src="ORE.webp" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <p class="card-text">Fancy Gown For Women
-                <br><br>₹1200
-                </p>
-                <a href="#" class="btn btn-primary">Add To Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-3 col-6 product-column">
-        <div class="card" style="width:200px">
-            <img class="card-img-top" src="MBE.webp" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <p class="card-text">Fancy Gown For Women
-                <br><br>₹1500
-                </p>
-                <a href="#" class="btn btn-primary">Add To Cart</a>
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="col-md-3 col-6 product-column">
-        <div class="card" style="width:200px">
-            <img class="card-img-top" src="ORE022817.webp" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <p class="card-text">Fancy Gown For Women
-                <br><br>₹1800
-                </p>
-                <a href="#" class="btn btn-primary">Add To Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-3 col-6 product-column">
-        <div class="card" style="width:200px">
-            <img class="card-img-top" src="ORE022711.webp" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <p class="card-text">Fancy Gown For Women
-                <br><br>₹1800
-                </p>
-                <a href="#" class="btn btn-primary">Add To Cart</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3 col-6 product-column">
-        <div class="card" style="width:200px">
-            <img class="card-img-top" src="ORE020912.webp" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <p class="card-text">Fancy Gown For Women
-                <br><br>₹1800
-                </p>
-                <a href="#" class="btn btn-primary">Add To Cart</a>
-            </div>
-        </div>
-    </div><div class="col-md-3 col-6 product-column">
-        <div class="card" style="width:200px">
-            <img class="card-img-top" src="ORE030411.webp" alt="Card image" style="width:100%">
-            <div class="card-body">
-                <p class="card-text">Fancy Gown For Women
-                <br><br>₹1800
-                </p>
-                <a href="#" class="btn btn-primary">Add To Cart</a>
-            </div>
-        </div>
-    </div>   
-
-
-    <h3>
-        <form>
-            <input type="text" name="Browse More Products" placeholder="Browse More Products.."> <br><br>
-        </form>
-    </h3>
-
-    <h4>New Arrivals</h4>
-
     <div class="row g-0">
-        <div class="col-md-3 ">
-            <div class="card" style="width:200px">
-                <img class="card-img-top" src="MBE052417-scaled.webp" alt="Card image" style="width:100%">
+    
+        <div class="col-md-3 product-column">
+            <div class="card" style="width:200px" >
+                <img class="card-img-top" src="ORE.webp" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <p class="card-text">Fancy Gown For Women
-                    <br><br>$12.34
+                    <br><br>₹1200
                     </p>
-                    <a href="#" class="btn btn-success">Buy Now</a>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
                 </div>
             </div>
         </div>
-          
-        <div class="col-md-3 ">
+
+        <div class="col-md-3 product-column">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="MBE.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <p class="card-text">Fancy Gown For Women
+                    <br><br>₹1500
+                    </p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-3 product-column">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="ORE022817.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <p class="card-text">Fancy Gown For Women
+                    <br><br>₹1800
+                    </p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 product-column">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="ORE022711.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <p class="card-text">Fancy Gown For Women
+                    <br><br>₹1800
+                    </p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 product-column">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="ORE020912.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <p class="card-text">Fancy Gown For Women
+                    <br><br>₹1800
+                    </p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+        </div>    
+        <div class="col-md-3 product-column">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="ORE030411.webp" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <p class="card-text">Fancy Gown For Women
+                    <br><br>₹1800
+                    </p>
+                    <a href="#" class="btn btn-primary">Add To Cart</a>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+        <h3>
+            <form>
+                <input type="text" name="Browse More Products" placeholder="Browse More Products.."> <br><br>
+            </form>
+        </h3>
+   
+    <h4>New Arrivals</h4>
+
+    <div class="row g-0">
+        <div class="col-md-3 product-column ">
+            <div class="card" style="width:200px">
+                <img class="card-img-top" src="MBE052417-scaled.webp" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <p class="card-text">Fancy Gown For Women
+                        <br><br>$12.34
+                        </p>
+                        <a href="#" class="btn btn-success">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-3 product-column">
             <div class="card" style="width:200px">
                 <img class="card-img-top" src="MBE052415-.webp" alt="Card image" style="width:100%">
                 <div class="card-body">
@@ -383,7 +426,8 @@
                 </div>
             </div>
         </div>
-
+</div>
+<div class="row">
         <div class="col-md-3 ">
             <div class="card" style="width:200px">
                 <img class="card-img-top" src="RYE052411-scaled.webp" alt="Card image" style="width:100%">
@@ -435,17 +479,17 @@
 
 
 
-              <h3>
-                <form>
-                  <input type="text" name="Browse More Products" placeholder="Browse More Products.."> <br><br>
-                  </form>
-                  </h3>
-
+    <h3>
+        <form>
+            <input type="text" name="Browse More Products" placeholder="Browse More Products.."> <br><br>
+            </form>
+    </h3>
+</div>
                   <div class="container p-5 my-5 bg-dark text-white">
                     <table >
                       <thead>
                         <tr>
-                          <img class="img-fluid logo-spec no-lazy" src="https://chempakam.com/wp-content/themes/chempakam/themeFunctions/media/logo.png" alt="">
+                          <img class=" img-fluid logo-spec no-lazy" src="https://chempakam.com/wp-content/themes/chempakam/themeFunctions/media/logo.png" alt="">
                           <th><b>Solutions</b><br><br>
                             My account<br>
                             Track Your Order<br>
@@ -469,6 +513,25 @@
                       </thead>
                       </table>
                   </div>
+
+    <!-- <footer>
+        <div class="footer-block1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <span class="footer logo">
+                            <img class=" img-fluid logo-spec no-lazy" src="https://chempakam.com/wp-content/themes/chempakam/themeFunctions/media/logo.png" alt="">
+                        </span>
+                        <div class="social-icons">
+                            <p></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+ -->
 
 
 
