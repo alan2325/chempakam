@@ -89,7 +89,7 @@
         position: relative;
     } */
 
-    h3 input[type=text] {
+    h3 input[type=button] {
         box-sizing: border-box;
         border: 2px solid #ccc;
         border-radius: 4px;
@@ -100,7 +100,7 @@
         background-repeat: no-repeat;
         padding: 12px 20px 12px 40px;
         /* margin-left:800px; */
-        margin-left: 40%;
+        margin-left: 20%;
         margin-top: 20px;
         
     }
@@ -160,12 +160,14 @@
     @media only screen and (max-width: 992px) {
         #home_main {
             margin-top: 80px;
+            
             width: 100%;
         }
     }
     @media only screen and (max-width: 992px) {
         #img_home {
             width: 200px;
+            margin-left: 25%;
             top:-400px;
         }
     }
@@ -174,11 +176,19 @@
             width: 200px;
             top:-240px;
         }
-        h3 input[type=text] {
-            margin-left: 15%;
+        h3 input[type=buttont] {
+            margin-left: 25%;
             margin-top: 20px;
         }
     }
+
+    /* @media only screen and (max-width: 768px) {
+        .form-control {
+            width: 200px;
+            top:-240px;
+            margin-left: 50%;
+        }
+    }     */
     .ico li{
         display: inline;
         margin-left:50px;
@@ -200,6 +210,8 @@
         color: white;
         display: inline;
     } */
+
+
     
   </style>
 </head>
@@ -429,7 +441,7 @@
 
     <h3>
         <form>
-            <input type="text" name="Browse More Products" placeholder="Browse More Products.."> <br><br>
+            <input type="button" name="Browse More Products" value="Browse More Products.."> <br><br>
         </form>
     </h3>
    
@@ -537,7 +549,7 @@
 
     <h3>
         <form>
-            <input type="text" name="Browse More Products" placeholder="Browse More Products.."> <br><br>
+            <input type="button" name="Browse More Products" value="Browse More Products.."> <br><br>
             </form>
     </h3>
     <!-- </div>
